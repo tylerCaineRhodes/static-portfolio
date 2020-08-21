@@ -13,8 +13,6 @@ body {
   z-index: 100;
 }
 
-
-
 .card-title:hover {
   color: teal !important;
 }
@@ -60,6 +58,10 @@ img {
 
 .input-field label {
    color: white;
+}
+
+#bio-pic {
+  border-radius: 50%;
 }
 
 
