@@ -7,3 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
   M.Sidenav.init(sideNavElems);
   M.ScrollSpy.init(scrollspyElems);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const modalElems = document.querySelectorAll('.modal');
+  M.Modal.init(modalElems);
+});
+
+const musicResumeButton = document.querySelector('#musicResume');
+musicResumeButton.addEventListener('click', () => alert('Sorry, my latest resume is not updated!'));

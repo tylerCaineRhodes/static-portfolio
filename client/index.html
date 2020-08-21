@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d04dff1ab3.js" crossorigin="anonymous"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -24,10 +25,42 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="./assets/TylerRhodesResume.pdf" download>Software Engineering Resume</a></li>
         <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/tylerCaineRhodes">Github</a></li>
-        <li><a href="#">Music Resume</a></li>
+        <li><a href="#modal1" class="modal-trigger">Musical Bio</a></li>
       </ul>
     </div>
   </nav>
+
+   <div id="modal1" class="modal">
+    <div class="modal-content">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l12">
+          <img src="./assets/img/concert.jpg" height="35%" width="35%" />
+        </div>
+      </div>
+      <div class="row">
+        <p class="flow-text">
+         Tyler Rhodes is a classical guitarist from Austin, Texas. 
+         He holds a degree in music performance at the University of Texas at Austin, where he studied with guitarist Adam Holzman. 
+         Tyler won his first competition at Eastfield Community College in Dallas st the age of twelve. 
+         Around the same time, he joined the Austin Bella Corda, a guitar ensemble of young advanced players who recorded a CD titled "Gypsy Teens”. 
+         Tyler has performed solo guitar concerts all over the US and abroad. 
+         He has received multiple honors in the Mid-America Guitar Competition in St. Louis, Musical Minds Festival in Houston TX, and the Yamaha Young Performing Artist Competition. 
+         At age eighteen, he appeared on From the Top in Carmel, Indiana (2012) and was a recipient of From the Top’s Jack Kent Cooke Young Artist Award. 
+         Tyler spent summer of 2012 in France studying and performing under the guidance of Olivier Chassain, professor of guitar at the Paris conservatory of music. 
+         Tyler was a member of the UT Guitar Quartet and awarded the UT System Regents’ Outstanding Student Awards in the Arts & Humanities in 2015. 
+         He received two master's degrees at Yale University under the guidance of guitarist and composer Benjamin Verdery. 
+         While studying at Yale, Tyler gave countless performances at venues such as the New England Guitar Society and Carnegie Hall. 
+         Tyler spent a semester abroad in Hakodate Japan, where he took private koto lessons and gave a lecture and performance in Japanese on the Sakura Variations for guitar and koto. 
+         In 2019, Tyler traveled to Vercelli Italy to perform pieces for the great Italian composer Angelo Gilardino.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">close</a>
+    </div>
+  </div>
 
   <ul class="sidenav" id="mobile-demo">
     <li><a href="#about">About</a></li>
@@ -35,7 +68,6 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="./assets/TylerRhodesResume.pdf" download>Software Engineering Resume</a></li>
     <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/tylerCaineRhodes">Github</a></li>
-    <li><a href="#">Music Resume</a></li>
   </ul>
 
     <div class="parallax-container valign-wrapper">
@@ -47,7 +79,7 @@
         </div>
         <div class="row">
           <div class="col l4">
-            <a class="waves-effect btn-large hoverable red accent-2 center-align">Get in touch!</a>
+            <a class="waves-effect btn-large hoverable red accent-2 center-align">Get in touch</a>
           </div>
         </div>
       </div>
@@ -63,13 +95,13 @@
         <div class="col l6 s12">
           <div class="card medium blue-grey accent-4 z-depth-3 cardActionGuy">
             <div class="card-content white-text">
-              <h3 class="center-align"><i class="fa fa-desktop fa-3x" aria-hidden="true"></i></h3>
+              <h3 class="center-align"><i class="fa fa-laptop-code fa-3x"></i></h3>
               <div class="divider"></div>
               <span class="card-title">Web Developement</span>
               <p>I create functional websites, from conception to deployment. I have experience on a myriad of technologies, from Bootstrap to PostgreSQL- all parts of the stack!</p>
             </div>
             <div class="card-action">
-              <a href="#">Find Out More</a>
+              <a href="#">Check out my Github</a>
             </div>
           </div>
         </div>
@@ -77,13 +109,13 @@
         <div class="col l6 s12">
           <div class="card medium red accent-2 z-depth-3 cardActionGuy">
             <div class="card-content white-text">
-              <h3 class="center-align"> <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i></h3>
+              <h3 class="center-align"> <i class="fas fa-chalkboard-teacher fa-3x"></i></i></h3>
               <div class="divider"></div>
               <span class="card-title">Music and Mentorship</span>
               <p>I have eight years of experience teaching classical guitar and music theory, sa well as experience teaching the full gamut of web technologies. I can help you reach your personal or professional goals.</p>
             </div>
             <div class="card-action">
-              <a href="#">Find Out More</a>
+              <a href="#expertise" id="musicResume">Music Resume</a>
             </div>
           </div>
         </div>
@@ -93,13 +125,12 @@
         <div class="col l6 s12">
           <div class="card medium red accent-2 z-depth-3 cardActionGuy">
             <div class="card-content white-text">
-              <h3 class="center-align"><i class="fa fa-desktop fa-3x" aria-hidden="true"></i></h3>
+              <h3 class="center-align"><i class="fas fa-book-reader fa-3x"></i></i></h3>
               <div class="divider"></div>
               <span class="card-title">Learning and Problem Solving</span>
-              <p>Learning is a skill in itelf which I'm constantly striving to refine. Occupying my mind with new challenges gives me life force! From Japanese language to medical terminology, my curiosity cretes an endless pursuit for knowledge</p>
+              <p>Learning is a skill in itself which I'm constantly striving to refine. Occupying my mind with new challenges gives me life force! From Japanese language to medical terminology, my curiosity drives me to be the best that I can be.</p>
             </div>
             <div class="card-action">
-              <a href="#">Find Out More</a>
             </div>
           </div>
         </div>
@@ -107,13 +138,13 @@
         <div class="col l6 s12">
           <div class="card medium blue-grey accent-4 z-depth-3 cardActionGuy">
             <div class="card-content white-text">
-              <h3 class="center-align"> <i class="material-icons large">audiotrack</i></h3>
+              <h3 class="center-align"><i class="fas fa-guitar fa-3x" aria-hidden="true"></i></h3>
               <div class="divider"></div>
               <span class="card-title">Concerts</span>
               <p>Classical guitarist, but can play other syles if requested. I perform gigs, special events, weddings, house concerts, etc.</p>
             </div>
             <div class="card-action">
-              <a href="#">Find Out More</a>
+              <a href="#contact">send me an email</a>
             </div>
           </div>
         </div>
@@ -126,7 +157,7 @@
       <div class="container">
         <div class="row center">
           <div class="col l10 offset-l1 valign">
-            <h2 class="center-align white-text cta">Interested in Working together?</h2>
+            <h2 class="center-align white-text cta">Have I caught your attention?</h2>
             <a href="#contact" class="center btn-large hoverable red accent-2">GET IN TOUCH</a>
           </div>
         </div>
@@ -139,7 +170,7 @@
       <h2 class="section-header scrollspy" id="projects">Recent Software Engineering Projects</h2>
       <div class="row">
         <div class="col l4 m8 offset-m2 s12">
-          <div class="card">
+          <div class="card cardActionGuy">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="./assets/img/animeicon.png">
             </div>
@@ -155,7 +186,7 @@
         </div>
 
         <div class="col l4 m8 offset-m2 s12">
-          <div class="card" >
+          <div class="card cardActionGuy" >
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="./assets/img/carousel480.png">
             </div>
@@ -171,7 +202,7 @@
         </div>
 
         <div class="col l4 m8 offset-m2 s12">
-          <div class="card" >
+          <div class="card cardActionGuy" >
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="./assets/img/weventcomp.png">
             </div>
@@ -192,7 +223,7 @@
 
         <div class="row">
         <div class="col l4 m8 offset-m2 s12">
-          <div class="card">
+          <div class="card cardActionGuy">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="./assets/img/wowesproxy.png">
             </div>
@@ -208,7 +239,7 @@
         </div>
 
         <div class="col l4 m8 offset-m2 s12">
-          <div class="card" >
+          <div class="card cardActionGuy" >
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="./assets/img/haruhi480.png">
             </div>
@@ -217,18 +248,18 @@
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Haruhi<i class="material-icons right">close</i></span>
-              <p>My fist extension for google chrome that I built, It finds any divs in google that contains the name Suzimiya Haruhi, and deletes it from the page. Unfortunately it's an inside joke that you have to watch the show to appreciate. I even submited to Google for review to be published and it was rejected. They must not be anime fans!</p>
+              <p>My fist extension for google chrome that I built, It finds any divs in google that contains the name Suzimiya Haruhi, and deletes it from the page! Unfortunately it's an inside joke that you have to watch the show to appreciate. I even submited to Google for review to be published and it was rejected. They must not be huge anime fans!</p>
             </div>
           </div>
         </div>
 
         <div class="col l4 m8 offset-m2 s12">
-          <div class="card" >
+          <div class="card cardActionGuy" >
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="./assets/img/weventcomp.png">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Zoop<i class="material-icons right">more_vert</i></span>
+              <span class="card-title activator grey-text text-darken-4 project-title">Zoop<i class="material-icons right">more_vert</i></span>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Zoop<i class="material-icons right">close</i></span>
@@ -249,22 +280,32 @@
  
     <div class="container">
       <div class="row">
-        <h2 class="section-header scrollspy" id="about">About Me</h2>
+        <div class="col s12 l12">
+          <h2 class="section-header scrollspy" id="about">About Me</h2>
+        </div>
+        <div class="col s12 l12">
+          <img src="./assets/img/tyler-has-fun.jpg" height="35%" width="35%" />
+        </div>
       </div>
       <div class="row">
         <p class="flow-text">
-          Hi, I'm Tyler! I’m a software engineer with strong experience in web development. 
+          Hi, I'm Tyler! I’m a software engineer with a focus in web development. 
           I've worked mainly with the MERN/SERN stack and React front-end libraries. 
-          I love anything Javascript and relational databases for the backend, like MySQL or PostgreSQL. 
-          I have a strong track record as an educator, including my most recent experience as a resident software engineer and technical mentor at Hack Reactor.
-          I'm currently searching for full time developer roles where I can contribute meaningful work to a team.
+          I love anything Javascript/Typescript! 
+          I have a strong track record as an educator, including my most recent experience as a resident software engineer and technical mentor at Hack Reactor, a software engineering emmersive that targets career changers and veterans.<br><br>
+          I firmly believe that the skills necessary for success as a classical musician heavily correlate to those required for software engineering. 
+          Both disciplines require countless hours of study, focus, practice, and tenacity. 
+
+          At the end of the day, the goal is the final product, communicating with an audience, and performing effectively. 
+          Combined with my teaching experience, I’m excited to see how these qualities continue to enable me to grow into an even greater software engineer. 
           Some of my other unique leadership experiences include being elected as the vice president of a nonprofit housing cooperative and trained as a conflict mediator. 
-          I also love languages and have limited working proficiency in Japanese!
+          I also love languages and have limited working proficiency in Japanese.
         </p>
       </div>
     </div>
 
-     <div class="container">
+
+    <div class="container">
       <div class="divider">
       </div>
     </div>
@@ -285,62 +326,6 @@
       <div class="divider">
       </div>
     </div>
-
-    <div class="container"> 
-      <div class="row">
-        <h5 class="section-header">For web contracting/teaching/performing inqueries:</h5>
-      </div>
-    </div>
-
-    <div class="container blue-grey accent-4 contact-form z-depth-2">
-      <div class="row">
-        <div class="col l8 offset-l2 m12 s12">
-
-            <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s6">
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label>
-                  </div>
-                  <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Last Name</label>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="linkedin" type="text" class="validate">
-                    <label for="Linkedin">Linkedin</label>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="email" type="text" class="validate">
-                    <label for="email">short description</label>
-                  </div>
-                </div>
-
-                <button class="btn waves-effect waves-light" type="submit" name="action">Send
-                  <i class="material-icons right">send</i>
-                </button>
-
-              </form>
-            </div>
-
-        </div>
-      </div>
-    </div>
-
   
     <footer>
       <div class="page-footer blue-grey accent-2">

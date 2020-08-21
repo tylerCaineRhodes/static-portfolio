@@ -13,6 +13,12 @@ body {
   z-index: 100;
 }
 
+
+
+.card-title:hover {
+  color: teal !important;
+}
+
 .logo {
   font-weight: 300;
   padding-left: 10px;
