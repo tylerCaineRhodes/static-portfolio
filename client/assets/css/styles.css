@@ -1,0 +1,64 @@
+body {
+  min-height: 200vh;
+  background-color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+}
+.cardActionGuy {
+  transition:all 0.5s ease-in-out;
+  -webkit-transition:all 0.2s ease-in-out;
+}
+
+.cardActionGuy:hover {
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+img {
+  opacity: 1 !important;
+}
+
+#javascipt-wall {
+  height: 20px;
+  width: 20px;
+}
+
+.thin-text {
+  font-weight: 300;
+  background: rgba(96, 125,139, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.section-header {
+  font-weight: 300;
+}
+
+.cta {
+  font-weight: 300;
+  text-shadow: 1px 1px black;
+}
+
+#force-height {
+  height: 400px;
+}
+
+.contact-form {
+  padding-top: 20px;
+  border-radius: 5px;
+}
+
+.input-field label {
+   color: white;
+}
+
+
+
+
+ 
+
+ 
