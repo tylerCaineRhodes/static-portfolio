@@ -64,8 +64,23 @@ img {
   border-radius: 50%;
 }
 
+#slyimage-chan {
+  opacity: 0;
+  transition: all .7s;
+  transform: translateX(-170%) scale(.85);
+}
+
+ #slyimage-chan.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+ }
 
 
+@media all and (max-width: 365px) {
+  .logo {
+    font-size: medium;
+  }
+}
 
  
 
