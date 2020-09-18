@@ -75,13 +75,8 @@ img {
   transform: translateX(0%) scale(1);
  }
 
-
 @media all and (max-width: 365px) {
   .logo {
     font-size: medium;
   }
 }
-
- 
-
- 
